@@ -38,4 +38,6 @@ iptables -t nat -A ntp_force_local -s 192.168.0.0/16 -j DNAT --to-destination 19
 iptables -t mangle -A POSTROUTING -j TTL --ttl-set 64
 ' package/network/config/firewall/files/firewall.user
 sed -i 's/CONFIG_BUILDSUFFIX=\".*\"/CONFIG_BUILDSUFFIX=\"-Faspand\"/' include/image.mk
+# 使用sed命令添加内核配置选项
+sed -i 's/.*CONFIG_NETFILTER_NETLINK_GLUE_CT.*/CONFIG_NETFILTER_NETLINK_GLUE_CT=y/' /target/linux/x86/config-*
 
