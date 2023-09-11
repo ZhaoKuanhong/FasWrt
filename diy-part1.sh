@@ -16,7 +16,11 @@
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-echo 'src-git UA2F https://github.com/Zxilly/UA2F' >>feeds.conf.default
-echo 'src-git rkp-ipid https://github.com/CHN-beta/rkp-ipid' >>feeds.conf.default
-echo 'src-git luci-app-brukamen https://github.com/lucikap/luci-app-brukamen' >>feeds.conf.default
-echo 'src-git luci-app-sdutlogin https://github.com/ZhaoKuanhong/luci-app-sdutlogin' >>feeds.conf.default
+#echo 'src-git UA2F https://github.com/Zxilly/UA2F' >>feeds.conf.default
+#echo 'src-git rkp-ipid https://github.com/CHN-beta/rkp-ipid' >>feeds.conf.default
+#echo 'src-git luci-app-brukamen https://github.com/lucikap/luci-app-brukamen' >>feeds.conf.default
+#echo 'src-git luci-app-sdutlogin https://github.com/ZhaoKuanhong/luci-app-sdutlogin' >>feeds.conf.default
+git clone https://github.com/Zxilly/UA2F.git package/UA2F
+git clone https://github.com/CHN-beta/rkp-ipid.git package/rkp-ipid
+git clone https://github.com/ZhaoKuanhong/luci-app-sdutlogin.git package/luci-app-sdutlogin
+git clone https://github.com/lucikap/luci-app-brukamen package/luci-app-brukamen 
